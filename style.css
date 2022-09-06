@@ -19,9 +19,9 @@ main {
   display: flex;
   justify-content: space-around;
 }
-.buysell {
+/* .buysell {
   display: inline-flex;
-}
+} */
 #logo {
   margin-top: 0.5em;
   margin-left: 3em;
@@ -135,4 +135,13 @@ header,
 }
 .nav input:checked ~ span:nth-child(3) {
   transform: translateY(0) rotate(45deg);
+}
+.bt{
+  height: 150px;
+}
+#sell{
+  margin-top: -70px;
+}
+#wereform{
+  height: 120px;
 }
