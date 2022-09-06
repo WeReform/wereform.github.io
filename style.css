@@ -5,7 +5,6 @@ body {
 }
 .navbar {
   display: flex;
-
   background-color: #16213e;
   margin: -8.5px;
   padding: 1.5em;
@@ -101,34 +100,39 @@ header,
   opacity: 0;
 }
 
-.nav span {
+.top, .middle, .bottom {
   margin-right: 20px;
-  margin-top: 1.25em;
+  margin-top: 1.50em;
   position: absolute;
   left: 22px;
   width: 30px;
-  height: 5px;
+  height: 4px;
   border-radius: 50px;
   background-color: #f4d14f;
   pointer-events: none;
   transition: 0.5s;
 }
-
+.bottom {
+  width:20px;
+}
+.nav:hover span {
+  width: 30px;
+}
 .nav input:checked ~ span {
   background-color: #f974a1;
 }
-
+.nav input:checked ~ .bottom {
+  background-color:transparent;
+}
 .nav span:nth-child(2) {
   transform: translateY(-8px);
 }
-
 .nav input:checked ~ span:nth-child(2) {
   transform: translateY(0) rotate(-45deg);
 }
 .nav span:nth-child(3) {
   transform: translateY(8px);
 }
-
 .nav input:checked ~ span:nth-child(3) {
   transform: translateY(0) rotate(45deg);
 }
