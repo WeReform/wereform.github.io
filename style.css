@@ -1,0 +1,134 @@
+body {
+  background-image: linear-gradient(to right, #63a4ff, #83eaf1);
+  height: 100%;
+  background-size: cover;
+}
+.navbar {
+  display: flex;
+
+  background-color: #16213e;
+  margin: -8.5px;
+  padding: 1.5em;
+  height: 4em;
+  width: 100%;
+  position: fixed;
+}
+main {
+  margin-top: 25em;
+}
+.we {
+  display: flex;
+  justify-content: space-around;
+}
+.buysell {
+  display: inline-flex;
+}
+#logo {
+  margin-top: 0.5em;
+  margin-left: 3em;
+}
+header {
+  margin: 0;
+  padding: 0;
+  min-height: 0.75vh;
+  max-height: 10vh;
+  font-family: "Open Sans", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header,
+.nav,
+.menu {
+  display: flex;
+  justify-content: right;
+  align-items: top;
+}
+
+.nav {
+  margin-right: 3em;
+  margin-top: 1em;
+  position: fixed;
+  background-color: transparent;
+  padding: 5px;
+  transition: 0.5s;
+  border-radius: 50px;
+  height: 45px;
+  overflow: hidden;
+}
+#name {
+  margin-bottom: 2em;
+  margin-left: 35%;
+}
+.menu {
+  margin: 0;
+  margin-top: 0.75em;
+  padding: 0;
+  width: 0px;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+
+.nav input:checked ~ .menu {
+  width: 450px;
+}
+.nav input:checked ~ .menu p a {
+  color: #f4d14f;
+}
+
+.menu p {
+  margin: 0 10px;
+  display: inline-flex;
+}
+
+.menu a {
+  text-decoration: none;
+  color: transparent;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.menu a {
+  color: transparent;
+}
+
+.menu a:hover {
+  color: #161919;
+}
+
+.nav input {
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.nav span {
+  margin-right: 20px;
+  margin-top: 1.25em;
+  position: absolute;
+  left: 22px;
+  width: 30px;
+  height: 5px;
+  border-radius: 50px;
+  background-color: #f4d14f;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.nav input:checked ~ span {
+  background-color: #f974a1;
+}
+
+.nav span:nth-child(2) {
+  transform: translateY(-8px);
+}
+
+.nav input:checked ~ span:nth-child(2) {
+  transform: translateY(0) rotate(-45deg);
+}
+.nav span:nth-child(3) {
+  transform: translateY(8px);
+}
+
+.nav input:checked ~ span:nth-child(3) {
+  transform: translateY(0) rotate(45deg);
+}
