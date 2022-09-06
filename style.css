@@ -13,11 +13,13 @@ body {
   position: fixed;
 }
 main {
+  z-index: 20;
   margin-top: 25em;
 }
-.we {
+.we {opacity: 0.8;
   display: flex;
   justify-content: space-around;
+  z-index: 10;
 }
 /* .buysell {
   display: inline-flex;
