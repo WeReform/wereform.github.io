@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +16,7 @@
           <a href="index.html"><img id="logo" src="./images/logo.png" height="60px" width="auto"></a>
         </div>
         <div id="name">
-            <img src="./images/wereform.png" alt="wereform" height="60px">
+            <img src="./images/wereform2.png" alt="wereform" height="60px">
         </div>
     </nav>
     <header>
@@ -33,8 +35,43 @@
         </div>
       </header>
       <main>
-        <section class="we">
-          <div><h1>Discard all your waste here!</h1>
+        <section class="mainc">
+          
+            <div class="register">
+              <h2 style="text-align: center">WE ARE HAPPY TO SERVE YOU</h2>
+              <form id="register" method="post">
+                <div class="ftext">
+                  <label>First Name</label>
+                  <input
+                    type="text"
+                    name="fname"
+                    id="name"
+                    placeholder="Enter Your Name"
+                  />
+                </div>
+                <br />
+                <div class="ftext">
+                  <label for="">Email Id</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="name"
+                    placeholder="Enter Your valid Email"
+                  />
+                </div>
+                <br />
+                <div class="ftext"><label>Details</label></div>
+                <br />
+                <input
+                  type="text"
+                  name="desc"
+                  id="name"
+                  style="width: 500px; margin-left: 0px; height: auto"
+                  placeholder="Explain your problem here"
+                />
+                <br />
+                <input type="submit" value="submit" name="submit" id="submit" />
+              </form>
             </div>
           </section>
         </section>

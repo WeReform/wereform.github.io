@@ -1,44 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WeReform</title>
-
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar">
-        <div>
-          <a href="index.html"><img id="logo" src="./images/logo.png" height="60px" width="auto"></a>
-        </div>
-        <div id="name">
-            <img src="./images/wereform.png" alt="wereform" height="60px">
-        </div>
+      <div>
+        <a href="index.html"
+          ><img id="logo" src="./images/logo.png" height="60px" width="auto"
+        /></a>
+      </div>
+      <div id="name">
+        <img src="./images/wereform2.png" alt="wereform" height="60px" />
+      </div>
     </nav>
     <header>
-        <div class="nav">
-          <input type="checkbox" />
-          <span class="top"></span>
-          <span class="middle"></span>
-          <span class="bottom"></span>
-          <div class="menu">
-            <p><a href="index.html">Home</a></p>
-            <p><a href="aboutus.html">About</a></p>
-            <p><a href="buy.html">Buy</a></p>
-            <p><a href="sell.html">Sell</a></p>
-            <p><a href="contactus.html">Contact&nbsp;us</a></p>
-          </div>
+      <div class="nav">
+        <input type="checkbox" />
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+        <div class="menu">
+          <p><a href="index.html">Home</a></p>
+          <p><a href="aboutus.html">About</a></p>
+          <p><a href="buy.html">Buy</a></p>
+          <p><a href="sell.html">Sell</a></p>
+          <p><a href="contactus.html">Contact&nbsp;us</a></p>
         </div>
-      </header>
-      <main>
-        <section class="we">
-          <div><h1>Contact Us</h1>
+      </div>
+    </header>
+    <main>
+      <section class="mainc">
+        <div class="register">
+          <h2 style="text-align: center">WE ARE HAPPY TO SERVE YOU</h2>
+          <form id="register" method="post">
+            <div class="ftext">
+              <label>First Name</label>
+              <input
+                type="text"
+                name="fname"
+                id="name"
+                placeholder="Enter Your Name"
+              />
             </div>
-          </section>
-        </section>
-      </main>
-    </body>
-  </html>
-  
+            <br />
+            <div class="ftext">
+              <label for="">Email Id</label>
+              <input
+                type="email"
+                name="email"
+                id="name"
+                placeholder="Enter Your valid Email"
+              />
+            </div>
+            <br />
+            <div class="ftext"><label>Details</label></div>
+            <br />
+            <input
+              type="text"
+              name="desc"
+              id="name"
+              style="width: 500px; margin-left: 0px; height: auto"
+              placeholder="Explain your problem here"
+            />
+            <br />
+            <input type="submit" value="submit" name="submit" id="submit" />
+          </form>
+        </div>
+        <div id="contactus">Get in touch with us!</div>
+      </section>
+    </main>
+  </body>
+</html>

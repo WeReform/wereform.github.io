@@ -1,11 +1,17 @@
 body {
-  background-image: linear-gradient(to right, #63a4ff, #83eaf1);
+  font-family: 'Antonio', sans-serif;
+  /* background-image: linear-gradient(to right, #035533, #01ff63); */
+  background-image: url(./images/back.jpg);
+  background-blend-mode:hard-light;
   height: 100%;
-  background-size: cover;
+  width: 100%;
+  background-size:cover;
+  background-repeat: no-repeat;
 }
 .navbar {
   display: flex;
-  background-color: #16213e;
+  /* background-color:rgba(132, 179, 186, 0.2); */
+  /* background-color: transparent; */
   margin: -8.5px;
   padding: 1.5em;
   height: 4em;
@@ -16,24 +22,52 @@ main {
   z-index: 20;
   margin-top: 25em;
 }
-.we {opacity: 0.8;
+.mainc{background-color:rgba(132, 179, 186, 0.58);
+  margin-top: -10em;
   display: flex;
   justify-content: space-around;
-  z-index: 10;
+  color: rgb(3, 3, 3);
+  border-radius: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
+  border: 1px solid black;
 }
-/* .buysell {
+#trash{background-color:rgba(255, 251, 226,0.2);
+  height: 80%;
+  padding: 2px;
+  color:#000000;
+  margin: 15px;
+  margin-top: 25px;
+  font-size: xx-large;
+  font-weight: 1000;
+}
+.we{height: fit-content;
+  margin-top: 6em;
+  /* background-color: rgba(22, 33, 62, 0.88); */
+  padding: 40px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction:column;
+  z-index: 0;
+  color: #f4d14f;
+}
+.buysell {
+  margin-top: 2em;
+  margin-left: 7em;
   display: inline-flex;
-} */
+  z-index: 1;
+  opacity: 1 ;
+}
 #logo {
   margin-top: 0.5em;
   margin-left: 3em;
 }
 header {
+  text-align: center;
   margin: 0;
   padding: 0;
   min-height: 0.75vh;
-  max-height: 10vh;
-  font-family: "Open Sans", Verdana, Geneva, Tahoma, sans-serif;
+  
 }
 
 header,
@@ -57,22 +91,26 @@ header,
 }
 #name {
   margin-bottom: 2em;
-  margin-left: 30%;
+  margin-left: 37%;
 }
-.menu {
+.menu {font-family: 'Antonio', sans-serif;
   margin: 0;
-  margin-top: 0.75em;
+  margin-top: 0.3em;
   padding: 0;
   width: 0px;
   overflow: hidden;
   transition: 0.5s ease-in-out;
+  font-weight: 1000;
+  font-size: x-large;
+  /* background-color: #16213e; */
 }
 
 .nav input:checked ~ .menu {
   width: 450px;
 }
 .nav input:checked ~ .menu p a {
-  color: #f4d14f;
+  color: #16213e;
+  font-weight: bolder;
 }
 
 .menu p {
@@ -87,14 +125,6 @@ header,
   font-weight: 600;
   transition: 0.5s;
 }
-.menu a {
-  color: transparent;
-}
-
-.menu a:hover {
-  color: #161919;
-}
-
 .nav input {
   width: 45px;
   height: 45px;
@@ -110,7 +140,7 @@ header,
   width: 30px;
   height: 4px;
   border-radius: 50px;
-  background-color: #f4d14f;
+  background-color: #000000;
   pointer-events: none;
   transition: 0.5s;
 }
@@ -139,11 +169,63 @@ header,
   transform: translateY(0) rotate(45deg);
 }
 .bt{
-  height: 150px;
+  height: 80px;
+  width: auto;
 }
 #sell{
-  margin-top: -70px;
+  margin-right: 20px;
 }
 #wereform{
+  opacity: 1;
   height: 120px;
+}
+div.register{
+  width: fit-content;
+  padding: 40px;
+  /* background-color:rgba(22, 33, 62, 0.88); */
+  font-size: 18px;
+  border-radius: 50px;
+  color: rgb(5, 5, 5);
+}
+
+input#name{
+  width: 300px;
+  border: 3px solid rgb(111, 103, 116);
+  border-radius: 8px;
+  outline: 0;
+  padding: 7px;
+  background-color: #fff;
+  /* box-shadow: inset 1px 1px 5px; */
+}
+
+input#submit{
+  text-transform:uppercase;
+  width: 510px;
+  padding: 7px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 3px;
+  background-color: rgb(196, 255, 216);
+  color: black;
+  cursor: pointer;
+  /* border: 1px solid black; */
+
+
+}
+
+.ftext{
+  display: inline-flex;
+  justify-content: space-around;
+}
+.ftext label{
+  width: 190px;
+  text-transform: uppercase;
+  /* font-family:Arial, Helvetica, sans-serif; */
+  font-size: 18px;
+  font-weight: 700;
+  
+}
+#contactus{
+  font-size: xxx-large;
+  margin-top: 3em;
 }
