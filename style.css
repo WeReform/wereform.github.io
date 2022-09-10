@@ -94,7 +94,8 @@ header,
 }
 #name {
   margin-bottom: 2em;
-  /* margin-left: 750px; */
+
+  margin-left: -1em;
   /* justify-content: center; */
   
 }
