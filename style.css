@@ -17,6 +17,7 @@ body {
   height: 4em;
   width: 100%;
   position: fixed;
+  justify-content: flex-start;
   
 }
 main {
@@ -61,7 +62,8 @@ main {
 }
 #logo {
   margin-top: 0.5em;
-  margin-left: 3em;
+  margin-left: 0px;
+  justify-content:left;
 }
 header {
   text-align: center;
@@ -90,9 +92,11 @@ header,
   height: 45px;
   overflow: hidden;
 }
-#name {width: 100%;
+#name {
   margin-bottom: 2em;
-  margin-left: 36%;
+  margin-left: 750px;
+  /* justify-content: center; */
+  
 }
 .menu {font-family: 'Antonio', sans-serif;
   margin: 0;
