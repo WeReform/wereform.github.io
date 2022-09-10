@@ -235,3 +235,14 @@ input#submit{
   font-size: xxx-large;
   margin-top: 3em;
 }
+
+.navbarm{
+  display: flex;
+  /* background-color:rgba(132, 179, 186, 0.2); */
+  /* background-color: transparent; */
+  margin: -8.5px;
+  padding: 1.5em;
+  height: 4em;
+  width: 100%;
+  position: fixed;
+}
