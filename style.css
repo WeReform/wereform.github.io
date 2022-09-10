@@ -17,7 +17,7 @@ body {
   height: 4em;
   width: 100%;
   position: fixed;
-  justify-content: space-between;
+  justify-content: space-around;
   
 }
 main {
@@ -62,7 +62,7 @@ main {
 }
 #logo {
   margin-top: 0.5em;
-  margin-left: 3em;
+  margin-left: -11em;
   justify-content:left;
 }
 header {
@@ -95,7 +95,7 @@ header,
 #name {
   margin-bottom: 2em;
 
-  margin-left: -1em;
+  margin-left: -2em;
   /* justify-content: center; */
   
 }
