@@ -1,80 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WeReform</title>
-
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar">
-        <div>
-          <a href="index.html"><img id="logo" src="./images/logo.png" height="60px" width="auto"></a>
-        </div>
-        <div id="name">
-            <img src="./images/wereform2.png" alt="wereform" height="60px">
-        </div>
+      <div>
+        <a href="index.html"
+          ><img id="logo" src="./images/logo.png" height="60px" width="auto"
+        /></a>
+      </div>
+      <div id="name">
+        <img src="./images/wereform2.png" alt="wereform" height="60px" />
+      </div>
+      <div></div>
     </nav>
     <header>
-        <div class="nav">
-          <input type="checkbox" />
-          <span class="top"></span>
-          <span class="middle"></span>
-          <span class="bottom"></span>
-          <div class="menu">
-            <p><a href="index.html">Home</a></p>
-            <p><a href="aboutus.html">About</a></p>
-            <p><a href="buy.html">Buy</a></p>
-            <p><a href="sell.html">Sell</a></p>
-            <p><a href="contactus.html">Contact&nbsp;us</a></p>
-          </div>
+      <div class="nav">
+        <input type="checkbox" />
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+        <div class="menu">
+          <p><a href="index.html">Home</a></p>
+          <p><a href="aboutus.html">About</a></p>
+          <p><a href="buy.html">Buy</a></p>
+          <p><a href="sell.html">Sell</a></p>
+          <p><a href="contactus.html">Contact&nbsp;us</a></p>
         </div>
-      </header>
-      <main>
-        <section class="mainc">
-          
-            <div class="register">
-              <h2 style="text-align: center">WE ARE HAPPY TO SERVE YOU</h2>
-              <form id="register" method="post">
-                <div class="ftext">
-                  <label>First Name</label>
-                  <input
-                    type="text"
-                    name="fname"
-                    id="name"
-                    placeholder="Enter Your Name"
-                  />
+      </div>
+    </header>
+    <main>
+      <section class="mainc">
+        <div class="register">
+
+          <h2 style="text-align:center ;">Sell Your Items Here!</h2>
+          <form action="" id="sell" method="post">
+              <!-- category -->
+              <h6 style="text-align:center;">Include Some Details</h6>
+              <div class="ftext">
+              <label>Category:</label>
+              <select name="category" id="category">
+                  <option value="">---Select a category---</option>
+                  <option value="Mobile">Mobile</option>
+                  <option value="Furnitures">Furnitures</option>
+                  <option value="Cars&Automobiles">Cars&Automobiles</option>
+                  <option value="Fashion">Fashion</option>
+                  <option value="Sports">Sports</option>
+                  <option value="Books&stationaries">Books&Stationaries</option>
+                  
+                      <option value="Plastic">Plastic</option>
+                      <option value="E-Waste">E-Waste</option>
+                      <option value="Others">Others</option>
+                  </select>
                 </div>
-                <br />
-                <div class="ftext">
-                  <label for="">Email Id</label>
-                  <input
-                    type="email"
-                    name="email"
-                    id="name"
-                    placeholder="Enter Your valid Email"
-                  />
-                </div>
-                <br />
-                <div class="ftext"><label>Details</label></div>
-                <br />
-                <input
-                  type="text"
-                  name="desc"
-                  id="name"
-                  style="width: 500px; margin-left: 0px; height: auto"
-                  placeholder="Explain your problem here"
-                />
-                <br />
-                <input type="submit" value="submit" name="submit" id="submit" />
-              </form>
-            </div>
-          </section>
-        </section>
-      </main>
-    </body>
-  </html>
+  
+  
+                      <!-- Ad Title -->
+                          <label for=""> <br><br> Ad-Title:</label>
+                          <br>
+                      <input type="text" name="title" id="Title" placeholder="Samsung-Galaxy-S13">
+  
+  
+                      <!-- Ad-description -->
+                      <label for=""> <br><br>Ad-Description:</label>
+                      <br>
+                      <textarea name="" id="description" cols="50" rows="10"></textarea>
+  
+                      <br><br><br>
+                      <hr>
+                      <br>
+  
+                      <!-- Pricing -->
+                      <h1>Set A Price</h1>
+                      <label for="">Rs:</label>
+                      <input type="number" min="0.01" step="0.01" id="price">
+                      <br><br>
+  
+  
+                      <!-- negotiation -->
+                     Negotiable<input type="radio" class="negotiation" name="negotiation"> 
+                     &nbsp;&nbsp;
+                     Non-Negotiable <input type="radio" class="negotiation" name="negotiation">
+                     <br><br>
+                     <hr>
+  
+  
+                     <!-- image -->
+                     <h1 class="images">Upload Photos Here:</h1>
+                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero ducimus vero ipsam odio sumenda, voluptatibus veniam dignissimos dolorum natus, eveniet mollitia impedit consequuntur! Libero nesciunt, deleniti delectus dignissimos alias sequi optio pariatur ut quibusdam sunt rerum eaque voluptate suscipit aspernatur dolore error corporis non voluptatum beatae iure natus. Libero animi facere itaque, nihil repudiandae aut blanditiis illum quidem sapiente.
+                     <br><br><br>
+                     <hr>
+  
+  
+                     <!-- location State -->
+                     <h1>Confirm Your Location</h1>
+                     <label for="">State:</label>
+                     <select name="State" id="State">
+                      <option value="State">---Select Your State---</option>
+                      <option value="Andaman&Nicobar">Andaman&Nicobar/option>
+                      <option value="Andhra Pradesh">Andhra pradesh</option>
+                      <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                      <option value="Assam">Assam</option>
+                      <option value="Bihar">Bihar</option>
+                      <option value="Chanddigarh">Chandigarh</option>
+                      <option value="Chhatisgarh">Chhatisgarh</option>
+                      <option value="Dadra&Nagar Haveli">Dadra&Nagar Haveli</option>
+                      <option value="Daman&Diu">Daman&Diu</option>
+                      <option value="Delhi">Delhi</option>
+                      <option value="Goa">Goa</option>
+                      <option value="Gujarat">Gujarat</option>
+                      <option value="Haryana">Haryana</option>
+                      <option value="Hiamachal Pradesh">Himachal Pradesh</option>
+                      <option value="Jammu&Kashmir">Jammu&Kashmir</option>
+                      <option value="Jharkhand">Jharkhand</option>
+                      <option value="Karnataka">Karnataka</option>
+                      <option value="Kerala">Kerala</option>
+                      <option value="Ladakh">Ladakh</option>
+                      <option value="Lakshadweep">Lakshadweep</option>
+                      <option value="Madhya Pradesh">Madhya Pradesh</option>
+                      <option value="Maharashtra">Maharashtra</option>
+                      <option value="Manipur">Manipur</option>
+                      <option value="Meghalaya">Meghalaya</option>
+                      <option value="Mizoram">Mizoram</option>
+                      <option value="Nagaland">Nagaland</option>
+                      <option value="Odisha">Odisha</option>
+                      <option value="Puducherry">Puducherry</option>
+                      <option value="Punjab">Punjab</option>
+                      <option value="Rajasthan">Rajasthan</option>
+                      <option value="Sikkim">Sikkim</option>
+                      <option value="Tamil Nadu">Tamil Nadu</option>
+                      <option value="Tripura">Tripura</option>
+                      <option value="Uttarakhand">Uttarakhand</option>
+                      <option value="Uttar Pradesh">Uttar Pradesh</option>
+                      <option value="West Bengal">West Bengal</option>
+                     </select>
+                     <br><br>
+  
+  
+                     <!-- location city -->
+                     <label for="City">City:</label>
+                     <input type="text" id="city" placeholder="Manesar">
+                     <br><br>
+  
+                     <!-- location pin -->
+                     <label for="">Pin:</label>
+                     <input type="number" id="pincode" placeholder="122001">
+  
+          </form>
+      </div>
+      </section>
+    </main>
+  </body>
+</html>
