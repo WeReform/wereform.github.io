@@ -14,7 +14,7 @@
     <title>WeReform</title>
   </head>
   <body>
-    <nav class="navbar">
+    <nav class="navbar" id="navb">
       <div>
         <a href="index.html"
           ><img id="logo" src="./images/logo.png" height="60px" width="auto"
@@ -46,7 +46,7 @@
           <h2>Sell Your Items Here!</h2>
           <form id="sell" method="post">
             <!-- category -->
-            <h6>Include Some Details</h6>
+            <h3>Include Some Details</h3>
             <div class="ftext">
               <label>Category:</label>
               <select name="category" id="lname">
@@ -62,7 +62,7 @@
                 <option value="Others">Others</option>
               </select>
             </div>
-            <br /><br />
+            <br />
 
             <!-- Ad Title -->
             <div class="ftext">
@@ -76,21 +76,20 @@
             </div>
 
             <!-- Ad-description -->
-            <label><br /><br />Ad-Description:</label>
+            <label><br />Ad-Description:</label>
             <br /><br>
             <textarea id="desc" cols="70" rows="10"></textarea>
 
-            <br /><br /><br />
+            <br>
             <hr />
-            <br />
 
             <!-- Pricing -->
             <h1>Set A Price</h1>
             <div class="ftext">
-              <label>&#8377:</label>
+              <label>Price:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&#8377</label>
               <input type="number" min="0.01" step="0.01" id="lname" />
             </div>
-            <br /><br />
+            <br />
 
             <!-- negotiation -->
             Negotiable<input
@@ -100,13 +99,13 @@
             />
             &nbsp;&nbsp; Non-Negotiable
             <input type="radio" class="negotiation" name="negotiation" />
-            <br /><br />
+            <br />
             <hr />
 
             <!-- image -->
             <h1 class="images">Upload Photos Here:</h1>
             <input type="file">
-            <br /><br /><br />
+            <br />
             <hr />
 
             <!-- location State -->
@@ -151,12 +150,12 @@
               <option value="Uttar Pradesh">Uttar Pradesh</option>
               <option value="West Bengal">West Bengal</option>
             </select></div>
-            <br /><br />
+            <br />
 
             <!-- location city -->
             <div class="ftext"><label for="City">City:</label>
             <input type="text" id="lname" placeholder="Manesar" /></div>
-            <br /><br />
+            <br />
 
             <!-- location pin -->
             <div class="ftext"><label for="">Pin:</label>
@@ -168,5 +167,23 @@
         </div>
       </section>
     </main>
+    <script type="text/javascript">
+   	
+      var  nav = document.getElementById('navb');
+      
+      window.onscroll = function(){
+  
+        if (window.pageYOffset >0) {
+  
+          nav.style.background = "#92c6af";
+        }
+        else{
+          nav.style.background = "transparent";
+        }
+      }
+  
+  
+  
+   </script>
   </body>
 </html>
