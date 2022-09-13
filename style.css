@@ -632,7 +632,7 @@ select {
 .card-img,
 .card-img-bottom,
 .card-img-top {
-  width: 100%;
+  width: auto;
 }
 .card-img,
 .card-img-top {
@@ -732,4 +732,15 @@ select {
   margin: auto;
   margin-top: 50px;
   z-index: -1;
+}
+.aboutus {
+  color:white;
+  background-color: #16213e;
+  border-radius: 30px;
+  margin:25px;
+  padding: 20px;
+  max-width:350px;
+}
+.center-about {
+  text-align: center;
 }
