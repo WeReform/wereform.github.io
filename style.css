@@ -1,19 +1,19 @@
 body {
   font-family: "Antonio", sans-serif;
-  /* background-image: linear-gradient(to right, #035533, #01ff63); */
   background-image: url(./images/back.jpg);
   background-blend-mode: hard-light;
   height: 100%;
-  /* width: 100%; */
   background-size: cover;
   background-repeat: no-repeat;
 }
+html::-webkit-scrollbar {
+  width: 0 !important;
+}
+
 .navbar {
-  z-index:3;
-  transition: .5s;
+  z-index: 3;
+  transition: 0.5s;
   display: flex;
-  /* background-color:rgba(143, 207, 186, 1); */
-  /* background-color: transparent; */
   margin: -8.5px;
   padding: 1.5em;
   height: 4em;
@@ -37,14 +37,12 @@ main {
   border: 1px solid black;
 }
 .mainb {
-  /* background-color: rgba(132, 179, 186, 0.58); */
   margin-top: 10rem;
   display: flex;
   justify-content: space-around;
   color: rgb(3, 3, 3);
   margin-left: 30px;
   margin-right: 30px;
-  /* border: 1px solid black; */
 }
 #trash {
   background-color: rgba(255, 251, 226, 0.2);
@@ -59,7 +57,6 @@ main {
 .we {
   height: fit-content;
   margin-top: 6em;
-  /* background-color: rgba(22, 33, 62, 0.88); */
   padding: 40px;
   border-radius: 50px;
   display: flex;
@@ -88,7 +85,8 @@ header {
 
 header,
 .nav,
-.menu {z-index:3;
+.menu {
+  z-index: 3;
   display: flex;
   justify-content: right;
   align-items: top;
@@ -106,9 +104,7 @@ header,
 }
 #name {
   margin-bottom: 2em;
-
   margin-left: -6em;
-  /* justify-content: center; */
 }
 .menu {
   font-family: "Antonio", sans-serif;
@@ -120,7 +116,6 @@ header,
   transition: 0.5s ease-in-out;
   font-weight: 1000;
   font-size: x-large;
-  /* background-color: #16213e; */
 }
 .nav input:checked ~ .menu {
   width: 450px;
@@ -201,7 +196,6 @@ header,
 div.register {
   width: fit-content;
   padding: 40px;
-  /* background-color:rgba(22, 33, 62, 0.88); */
   font-size: 18px;
   border-radius: 50px;
   color: rgb(5, 5, 5);
@@ -239,7 +233,6 @@ div.register {
 .ftext label {
   width: 190px;
   text-transform: uppercase;
-  /* font-family:Arial, Helvetica, sans-serif; */
   font-size: 18px;
   font-weight: 700;
 }
@@ -255,8 +248,6 @@ div.register {
 
 .navbarm {
   display: flex;
-  /* background-color:rgba(132, 179, 186, 0.2); */
-  /* background-color: transparent; */
   margin: -8.5px;
   padding: 1.5em;
   height: 4em;
@@ -348,8 +339,8 @@ select {
   margin: 1em;
   z-index: -1;
 }
-#cart{
-  height:30px;
+#cart {
+  height: 30px;
 }
 
 .categoryName {
@@ -688,7 +679,6 @@ select {
 .cards {
   display: flex;
   justify-content: space-around;
-  /* margin-left: 250px; */
 }
 .buy_button {
   background-color: rgb(0, 167, 111);
@@ -734,13 +724,31 @@ select {
   z-index: -1;
 }
 .aboutus {
-  color:white;
-  background-color: #16213e;
+  color: white;
+  background-color: rgba(42, 55, 49, 0.6);
   border-radius: 30px;
-  margin:25px;
+  margin: 25px;
   padding: 20px;
-  max-width:350px;
+  height: fit-content;
+  max-width: 350px;
+  align-self: center;
 }
 .center-about {
   text-align: center;
+}
+.team {
+  background-color: rgba(132, 179, 186, 0.58);
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: rgb(3, 3, 3);
+  border-radius: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
+  border: 1px solid black;
+}
+.team2 {
+  display: flex;
+  justify-content: center;
 }

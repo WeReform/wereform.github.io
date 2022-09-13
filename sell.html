@@ -1,116 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Antonio:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WeReform</title>
-  </head>
-  <body>
-    <nav class="navbar" id="navb">
-      <div>
-        <a href="index.html"
-          ><img id="logo" src="./images/logo.png" height="60px" width="auto"
-        /></a>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WeReform</title>
+</head>
+
+<body>
+  <nav class="navbar" id="navb">
+    <div>
+      <a href="index.html"><img id="logo" src="./images/logo.png" height="60px" width="auto" /></a>
+    </div>
+    <div id="name">
+      <img src="./images/wereform2.png" alt="wereform" height="60px" />
+    </div>
+    <div></div>
+  </nav>
+  <header>
+    <div class="nav">
+      <input type="checkbox" />
+      <span class="top"></span>
+      <span class="middle"></span>
+      <span class="bottom"></span>
+      <div class="menu">
+        <p><a href="index.html">Home</a></p>
+        <p><a href="aboutus.html">About</a></p>
+        <p><a href="buy.html">Buy</a></p>
+        <p><a href="sell.html">Sell</a></p>
+        <p><a href="contactus.html">Contact&nbsp;us</a></p>
       </div>
-      <div id="name">
-        <img src="./images/wereform2.png" alt="wereform" height="60px" />
-      </div>
-      <div></div>
-    </nav>
-    <header>
-      <div class="nav">
-        <input type="checkbox" />
-        <span class="top"></span>
-        <span class="middle"></span>
-        <span class="bottom"></span>
-        <div class="menu">
-          <p><a href="index.html">Home</a></p>
-          <p><a href="aboutus.html">About</a></p>
-          <p><a href="buy.html">Buy</a></p>
-          <p><a href="sell.html">Sell</a></p>
-          <p><a href="contactus.html">Contact&nbsp;us</a></p>
-        </div>
-      </div>
-    </header>
-    <main>
-      <section class="sec">
-        <div class="register registers">
-          <h2>Sell Your Items Here!</h2>
-          <form id="sell" method="post">
-            <!-- category -->
-            <h3>Include Some Details</h3>
-            <div class="ftext">
-              <label>Category:</label>
-              <select name="category" id="lname">
-                <option value="">---Select a category---</option>
-                <option value="Mobile">Mobile</option>
-                <option value="Furnitures">Furnitures</option>
-                <option value="Cars&Automobiles">Cars&Automobiles</option>
-                <option value="Fashion">Fashion</option>
-                <option value="Sports">Sports</option>
-                <option value="Books&stationaries">Books&Stationaries</option>
-                <option value="Plastic">Plastic</option>
-                <option value="E-Waste">E-Waste</option>
-                <option value="Others">Others</option>
-              </select>
-            </div>
-            <br />
+    </div>
+  </header>
+  <main>
+    <section class="sec">
+      <div class="register registers">
+        <h2>Sell Your Items Here!</h2>
+        <form id="sell" method="post">
+          <!-- category -->
+          <h3>Include Some Details</h3>
+          <div class="ftext">
+            <label>Category:</label>
+            <select name="category" id="lname">
+              <option value="">---Select a category---</option>
+              <option value="Mobile">Mobile</option>
+              <option value="Furnitures">Furnitures</option>
+              <option value="Cars&Automobiles">Cars&Automobiles</option>
+              <option value="Fashion">Fashion</option>
+              <option value="Sports">Sports</option>
+              <option value="Books&stationaries">Books&Stationaries</option>
+              <option value="Plastic">Plastic</option>
+              <option value="E-Waste">E-Waste</option>
+              <option value="Others">Others</option>
+            </select>
+          </div>
+          <br />
 
-            <!-- Ad Title -->
-            <div class="ftext">
-              <label>Ad-Title:</label>
-              <input
-                type="text"
-                name="title"
-                id="lname"
-                placeholder="Samsung-Galaxy-S13"
-              />
-            </div>
+          <!-- Ad Title -->
+          <div class="ftext">
+            <label>Ad-Title:</label>
+            <input type="text" name="title" id="lname" placeholder="Samsung-Galaxy-S13" />
+          </div>
 
-            <!-- Ad-description -->
-            <label><br />Ad-Description:</label>
-            <br /><br>
-            <textarea id="desc" cols="70" rows="10"></textarea>
+          <!-- Ad-description -->
+          <label><br />Ad-Description:</label>
+          <br /><br>
+          <textarea id="desc" cols="70" rows="10"></textarea>
 
-            <br>
-            <hr />
+          <br>
+          <hr />
 
-            <!-- Pricing -->
-            <h1>Set A Price</h1>
-            <div class="ftext">
-              <label>Price:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&#8377</label>
-              <input type="number" min="0.01" step="0.01" id="lname" />
-            </div>
-            <br />
+          <!-- Pricing -->
+          <h1>Set A Price</h1>
+          <div class="ftext">
+            <label>Price:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&#8377</label>
+            <input type="number" min="0.01" step="0.01" id="lname" />
+          </div>
+          <br />
 
-            <!-- negotiation -->
-            Negotiable<input
-              type="radio"
-              class="negotiation"
-              name="negotiation"
-            />
-            &nbsp;&nbsp; Non-Negotiable
-            <input type="radio" class="negotiation" name="negotiation" />
-            <br />
-            <hr />
+          <!-- negotiation -->
+          Negotiable<input type="radio" class="negotiation" name="negotiation" />
+          &nbsp;&nbsp; Non-Negotiable
+          <input type="radio" class="negotiation" name="negotiation" />
+          <br />
+          <hr />
 
-            <!-- image -->
-            <h1 class="images">Upload Photos Here:</h1>
-            <input type="file">
-            <br />
-            <hr />
+          <!-- image -->
+          <h1 class="images">Upload Photos Here:</h1>
+          <input type="file">
+          <br />
+          <hr />
 
-            <!-- location State -->
-            <h1>Confirm Your Location</h1>
-            <div class="ftext"><label for="">State:</label>
+          <!-- location State -->
+          <h1>Confirm Your Location</h1>
+          <div class="ftext"><label for="">State:</label>
             <select name="State" id="lname">
               <option value="State">---Select Your State---</option>
               <option value="Andaman&Nicobar">Andaman&Nicobar/option></option>
@@ -149,41 +137,38 @@
               <option value="Uttarakhand">Uttarakhand</option>
               <option value="Uttar Pradesh">Uttar Pradesh</option>
               <option value="West Bengal">West Bengal</option>
-            </select></div>
-            <br />
+            </select>
+          </div>
+          <br />
 
-            <!-- location city -->
-            <div class="ftext"><label for="City">City:</label>
-            <input type="text" id="lname" placeholder="Manesar" /></div>
-            <br />
+          <!-- location city -->
+          <div class="ftext"><label for="City">City:</label>
+            <input type="text" id="lname" placeholder="Manesar" />
+          </div>
+          <br />
 
-            <!-- location pin -->
-            <div class="ftext"><label for="">Pin:</label>
-            <input type="number" id="lname" placeholder="122001" /></div>
-            <hr>
-            <br>
-            <input type="submit" value="submit" name="submit" id="submit" style="margin-left: 40px;" />
-          </form>
-        </div>
-      </section>
-    </main>
-    <script type="text/javascript">
-   	
-      var  nav = document.getElementById('navb');
-      
-      window.onscroll = function(){
-  
-        if (window.pageYOffset >0) {
-  
-          nav.style.background = "#92c6af";
-        }
-        else{
-          nav.style.background = "transparent";
-        }
+          <!-- location pin -->
+          <div class="ftext"><label for="">Pin:</label>
+            <input type="number" id="lname" placeholder="122001" />
+          </div>
+          <hr>
+          <br>
+          <input type="submit" value="submit" name="submit" id="submit" style="margin-left: 40px;" />
+        </form>
+      </div>
+    </section>
+  </main>
+  <script type="text/javascript">
+    var nav = document.getElementById('navb');
+    window.onscroll = function () {
+      if (window.pageYOffset > 0) {
+        nav.style.background = "#92c6af";
       }
-  
-  
-  
-   </script>
-  </body>
+      else {
+        nav.style.background = "transparent";
+      }
+    }
+  </script>
+</body>
+
 </html>
