@@ -1,5 +1,5 @@
 body {
-  font-family: "Antonio", sans-serif;
+  font-family: "Poppins", sans-serif;
   background-image: url(./images/back.jpg);
   background-blend-mode: hard-light;
   height: 100%;
@@ -45,6 +45,7 @@ main {
   margin-right: 30px;
 }
 #trash {
+  font-family: "Antonio", sans-serif;
   background-color: rgba(255, 251, 226, 0.2);
   height: 80%;
   padding: 2px;
@@ -237,6 +238,7 @@ div.register {
   font-weight: 700;
 }
 #contactus {
+  font-family: "Antonio", sans-serif;
   font-size: xxx-large;
   margin-top: 3em;
 }
@@ -716,8 +718,6 @@ select {
   border: none;
 }
 .slider {
-  display: flex;
-  justify-content: space-around;
   width: 70%;
   margin: auto;
   margin-top: 50px;
@@ -751,4 +751,61 @@ select {
 .team2 {
   display: flex;
   justify-content: center;
+}
+
+.footer {
+  margin:-8px;
+  margin-top: 150px;
+  height: 200px;
+  padding: 10px;
+  padding-bottom: 0px;
+  width: auto;
+  background: #475d53;
+  color: #efefef;
+  justify-content: space-around;
+  display: flex;
+}
+.copyright{ background: #475d53;
+  color: #efefef;
+  justify-content: space-around;
+  display: flex;
+  margin: -8px;
+
+}
+.footer.div {
+  text-align: center;
+}
+.footer.div h3 {
+  font-weight: 300;
+  margin-bottom: 30px;
+  /* letter-spacing: 1px; */
+}
+.f1 a {
+  display: block;
+  text-decoration: none;
+  color: #efefef;
+  margin-bottom: 10px;
+}
+#form2 input {
+  width: 400px;
+  height: 45px;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  outline: none;
+  border: none;
+}
+#form2 button {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px 30px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.f1{
+  display: flex;
+  flex-direction: column;
 }
