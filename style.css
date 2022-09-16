@@ -356,6 +356,7 @@ select {
 /* carousel */
 .carousel {
   position: relative;
+  width: 1000px;
 }
 .carousel-control-prev {
   left: 0;
