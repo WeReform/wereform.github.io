@@ -12,12 +12,14 @@
   <title>WeReform</title>
 </head>
 
+<!-- <script src="//code.tidio.co/v7xj6nuvgsrtubdua17faftdnw5aboqc.js" async></script> -->
+
 <body>
   <nav class="navbarm">
     <div style="margin-right: 0px">
       <a href="index.html"><img id="logo" src="./images/logo.png" height="80px" width="auto" /></a>
     </div>
-    <div id="trash">INDIA'S FIRST TRASHSOUK</div>
+    <div id="trash">INDIA'S FIRST RECYCLING OPERATOR</div>
   </nav>
 
   <header>
@@ -35,7 +37,7 @@
       <span class="middle"></span>
       <span class="bottom"></span>
       <div class="menu">
-        <p><a href="index.html">Home</a></p>
+        <p><a href="index.html">Home</a></p> 
         <p><a href="aboutus.html">About</a></p>
         <p><a href="buy.html">Buy</a></p>
         <p><a href="sell.html">Sell</a></p>
@@ -65,15 +67,17 @@
       <section>
         <div class="register">
           <h2 style="text-align: center">REGISTER HERE</h2>
-          <form id="register">
+
+
+          <form id="register" name="submit-to-google-sheet">
             <div class="ftext">
               <label>First Name</label>
-              <input type="text" name="fname" id="lname" placeholder="Enter Your First Name" />
+              <input type="text" name="firstname" id="lname" placeholder="Enter Your First Name" required/>
             </div>
             <br />
             <div class="ftext">
               <label>Last Name</label>
-              <input type="text" name="lname" id="lname" placeholder="Enter Your Last Name" />
+              <input type="text" name="lastname" id="lname" placeholder="Enter Your Last Name" required/>
             </div>
             <br />
             <div class="ftext">
@@ -83,7 +87,7 @@
             <br />
             <div class="ftext">
               <label for="">Email Id</label>
-              <input type="email" name="email" id="lname" placeholder="Enter Your valid Email" />
+              <input type="email" name="email" id="lname" placeholder="Enter Your valid Email" required />
             </div>
             <br />
             <div class="ftext">
@@ -99,13 +103,15 @@
             </div>
             <br />
             <br />
-            <button type="submit" id="submit">Submit</button>
+            <button type="submit" id="submit" onclick="display()">Submit</button>
           </form>
+
+          <h1 class="random" id="randomMessage">Message Successfully Sent!</h1>
         </div>
       </section>
     </section>
   </main>
-  
+  <script src="script.js"></script>
 </body>
 
 </html>
